@@ -30,6 +30,8 @@
 		20EDC2B6282A7C4B00343A90 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDC2B5282A7C4B00343A90 /* ShakeyBellView.swift */; };
 		20EDC2BA282A9E1A00343A90 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDC2B9282A9E1A00343A90 /* Date+Utils.swift */; };
 		20EDC2BE282A9FA500343A90 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDC2BD282A9FA500343A90 /* AccountSummaryViewController+Networking.swift */; };
+		20EDC2C6282AAEB700343A90 /* ProfileTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDC2C5282AAEB700343A90 /* ProfileTest.swift */; };
+		20EDC2CC282AAFA000343A90 /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDC2CB282AAFA000343A90 /* AccountTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		20EDC2B5282A7C4B00343A90 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
 		20EDC2B9282A9E1A00343A90 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
 		20EDC2BD282A9FA500343A90 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
+		20EDC2C5282AAEB700343A90 /* ProfileTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTest.swift; sourceTree = "<group>"; };
+		20EDC2CB282AAFA000343A90 /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +139,9 @@
 		2027BB89282929C000AA4857 /* BankeyUnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				20EDC2C4282AAE9700343A90 /* AccountSummary */,
+				20EDC2C3282AAE8100343A90 /* Util */,
 				2027BB8C282929C000AA4857 /* Info.plist */,
-				2027BB9428292AD100AA4857 /* CurrencyFormatterTests.swift */,
 			);
 			path = BankeyUnitTests;
 			sourceTree = "<group>";
@@ -209,6 +214,23 @@
 				20EDC2B5282A7C4B00343A90 /* ShakeyBellView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		20EDC2C3282AAE8100343A90 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2027BB9428292AD100AA4857 /* CurrencyFormatterTests.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		20EDC2C4282AAE9700343A90 /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				20EDC2C5282AAEB700343A90 /* ProfileTest.swift */,
+				20EDC2CB282AAFA000343A90 /* AccountTests.swift */,
+			);
+			path = AccountSummary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +335,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2027BB9528292AD100AA4857 /* CurrencyFormatterTests.swift in Sources */,
+				20EDC2CC282AAFA000343A90 /* AccountTests.swift in Sources */,
+				20EDC2C6282AAEB700343A90 /* ProfileTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
