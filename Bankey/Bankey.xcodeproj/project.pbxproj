@@ -28,6 +28,8 @@
 		20AE4BFE2826B826004BC8CD /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE4BFD2826B826004BC8CD /* OnboardingContainerViewController.swift */; };
 		20AE4C012826BF71004BC8CD /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE4C002826BF71004BC8CD /* OnboardingViewController.swift */; };
 		20EDC2B6282A7C4B00343A90 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDC2B5282A7C4B00343A90 /* ShakeyBellView.swift */; };
+		20EDC2BA282A9E1A00343A90 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDC2B9282A9E1A00343A90 /* Date+Utils.swift */; };
+		20EDC2BE282A9FA500343A90 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDC2BD282A9FA500343A90 /* AccountSummaryViewController+Networking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		20AE4BFD2826B826004BC8CD /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		20AE4C002826BF71004BC8CD /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		20EDC2B5282A7C4B00343A90 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
+		20EDC2B9282A9E1A00343A90 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
+		20EDC2BD282A9FA500343A90 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 				2009363F2827BCCB00FBFE46 /* LocalState.swift */,
 				2027BB81282910E300AA4857 /* CurrencyFormatter.swift */,
 				2027BB9F2829478D00AA4857 /* NSNotificationName.swift */,
+				20EDC2B9282A9E1A00343A90 /* Date+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				2009364D2827E43F00FBFE46 /* AccountSummaryViewController.swift */,
+				20EDC2BD282A9FA500343A90 /* AccountSummaryViewController+Networking.swift */,
 				2027BB772828EFF400AA4857 /* Header */,
 				2027BB7A2828F00D00AA4857 /* Cells */,
 			);
@@ -315,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				200936462827D10300FBFE46 /* UIViewController+Utils.swift in Sources */,
+				20EDC2BA282A9E1A00343A90 /* Date+Utils.swift in Sources */,
 				20AE4BD82826722C004BC8CD /* LoginView.swift in Sources */,
 				200936402827BCCB00FBFE46 /* LocalState.swift in Sources */,
 				200936512827E82E00FBFE46 /* AccountSummaryHeaderView.swift in Sources */,
@@ -331,6 +338,7 @@
 				2009364E2827E43F00FBFE46 /* AccountSummaryViewController.swift in Sources */,
 				20AE4BBE28266E39004BC8CD /* AppDelegate.swift in Sources */,
 				20AE4BFE2826B826004BC8CD /* OnboardingContainerViewController.swift in Sources */,
+				20EDC2BE282A9FA500343A90 /* AccountSummaryViewController+Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
