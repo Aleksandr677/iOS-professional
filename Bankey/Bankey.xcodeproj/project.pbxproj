@@ -20,6 +20,8 @@
 		2027BB9528292AD100AA4857 /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2027BB9428292AD100AA4857 /* CurrencyFormatterTests.swift */; };
 		2027BBA02829478D00AA4857 /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2027BB9F2829478D00AA4857 /* NSNotificationName.swift */; };
 		2027BBA428294A9400AA4857 /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2027BBA328294A9400AA4857 /* UITextField+SecureToggle.swift */; };
+		203C7165282D77E2005C0F1C /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203C7164282D77E2005C0F1C /* ProfileManager.swift */; };
+		203C716D282D7A52005C0F1C /* AccountSummaryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203C716C282D7A52005C0F1C /* AccountSummaryViewControllerTests.swift */; };
 		203D2F4C282C16E900C4B5E4 /* SceletonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203D2F4B282C16E900C4B5E4 /* SceletonLoadable.swift */; };
 		203D2F50282C17AE00C4B5E4 /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203D2F4F282C17AE00C4B5E4 /* SkeletonCell.swift */; };
 		20AE4BBE28266E39004BC8CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE4BBD28266E39004BC8CD /* AppDelegate.swift */; };
@@ -62,6 +64,8 @@
 		2027BB9428292AD100AA4857 /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
 		2027BB9F2829478D00AA4857 /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
 		2027BBA328294A9400AA4857 /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
+		203C7164282D77E2005C0F1C /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		203C716C282D7A52005C0F1C /* AccountSummaryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTests.swift; sourceTree = "<group>"; };
 		203D2F4B282C16E900C4B5E4 /* SceletonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceletonLoadable.swift; sourceTree = "<group>"; };
 		203D2F4F282C17AE00C4B5E4 /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
 		20AE4BBA28266E39004BC8CD /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +123,7 @@
 				20EDC2BD282A9FA500343A90 /* AccountSummaryViewController+Networking.swift */,
 				2027BB772828EFF400AA4857 /* Header */,
 				2027BB7A2828F00D00AA4857 /* Cells */,
+				203C7163282D77B2005C0F1C /* Networking */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -150,6 +155,14 @@
 				2027BB8C282929C000AA4857 /* Info.plist */,
 			);
 			path = BankeyUnitTests;
+			sourceTree = "<group>";
+		};
+		203C7163282D77B2005C0F1C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				203C7164282D77E2005C0F1C /* ProfileManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		20AE4BB128266E39004BC8CD = {
@@ -235,6 +248,7 @@
 			children = (
 				20EDC2C5282AAEB700343A90 /* ProfileTest.swift */,
 				20EDC2CB282AAFA000343A90 /* AccountTests.swift */,
+				203C716C282D7A52005C0F1C /* AccountSummaryViewControllerTests.swift */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -343,6 +357,7 @@
 				2027BB9528292AD100AA4857 /* CurrencyFormatterTests.swift in Sources */,
 				20EDC2CC282AAFA000343A90 /* AccountTests.swift in Sources */,
 				20EDC2C6282AAEB700343A90 /* ProfileTest.swift in Sources */,
+				203C716D282D7A52005C0F1C /* AccountSummaryViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +368,7 @@
 				200936462827D10300FBFE46 /* UIViewController+Utils.swift in Sources */,
 				203D2F50282C17AE00C4B5E4 /* SkeletonCell.swift in Sources */,
 				20EDC2BA282A9E1A00343A90 /* Date+Utils.swift in Sources */,
+				203C7165282D77E2005C0F1C /* ProfileManager.swift in Sources */,
 				20AE4BD82826722C004BC8CD /* LoginView.swift in Sources */,
 				200936402827BCCB00FBFE46 /* LocalState.swift in Sources */,
 				200936512827E82E00FBFE46 /* AccountSummaryHeaderView.swift in Sources */,
