@@ -9,7 +9,7 @@ import UIKit
 import Foundation
 
 struct PasswordCriteria {
-    static func letgthCriteriaMet(_ text: String) -> Bool {
+    static func lengthCriteriaMet(_ text: String) -> Bool {
         text.count >= 8 && text.count <= 32
     }
     
@@ -18,7 +18,7 @@ struct PasswordCriteria {
     }
     
     static func lengthAndNoSpaceMet(_ text: String) -> Bool {
-        letgthCriteriaMet(text) && noSpaceCriteriaMet(text)
+        lengthCriteriaMet(text) && noSpaceCriteriaMet(text)
     }
     
     static func uppercaseMet(_ text: String) -> Bool {

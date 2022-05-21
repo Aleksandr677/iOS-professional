@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     let confirmPasswordTextField = PasswordTextField(placeHolderText: "Re-enter new password")
     let  resetButton = UIButton(type: .system)
     
+    var alert: UIAlertController? //
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -158,7 +160,7 @@ extension ViewController {
             return
         }
         //print("userInfo \(userInfo)")
-        print("keyboard \(keyboardFrame)")
+        //print("keyboard \(keyboardFrame)")
         //print("currentTextField \(currentTextField)")
         
         //check if the top of the keyboard is above the botom of the currently focused textbox
@@ -198,7 +200,8 @@ extension ViewController {
     }
     
     private func showAlert(title: String, message: String) {
-        let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
+        alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
+        guard let alert = alert else { return }
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         
         alert.title = title
@@ -207,3 +210,15 @@ extension ViewController {
     }
 }
 
+// MARK: Tests
+extension ViewController {
+    var newPasswordText: String? {
+        get { return newPasswordTextField.text }
+        set { newPasswordTextField.text = newValue}
+    }
+    
+    var confirmPasswordText: String? {
+        get { return confirmPasswordTextField.text }
+        set { confirmPasswordTextField.text = newValue}
+    }
+}

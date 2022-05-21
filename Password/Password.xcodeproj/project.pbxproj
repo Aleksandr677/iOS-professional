@@ -13,10 +13,23 @@
 		201CA461282EA24E0083B42E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201CA45F282EA24E0083B42E /* LaunchScreen.storyboard */; };
 		201CA46E282EA5C60083B42E /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201CA46D282EA5C60083B42E /* PasswordTextField.swift */; };
 		2031A84F2838FD1E00CE904B /* UIResponder+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2031A84E2838FD1E00CE904B /* UIResponder+Utils.swift */; };
+		2031A8642839297F00CE904B /* PasswordCriteriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2031A8632839297F00CE904B /* PasswordCriteriaTests.swift */; };
+		2031A868283932C000CE904B /* PasswordStatusViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2031A867283932C000CE904B /* PasswordStatusViewTests.swift */; };
+		2031A86C283939C200CE904B /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2031A86B283939C200CE904B /* ViewControllerTests.swift */; };
 		2049933B28354752001315FD /* PasswordCriteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049933A28354752001315FD /* PasswordCriteria.swift */; };
 		20E1F0002833FF5000E00E73 /* PasswordStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1EFFF2833FF5000E00E73 /* PasswordStatusView.swift */; };
 		20FF2C392832B282000D944B /* PasswordCriteriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2C382832B282000D944B /* PasswordCriteriaView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2031A85A283928A900CE904B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 201CA449282EA24D0083B42E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 201CA450282EA24D0083B42E;
+			remoteInfo = Password;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		201CA451282EA24D0083B42E /* Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Password.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +40,11 @@
 		201CA462282EA24E0083B42E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		201CA46D282EA5C60083B42E /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		2031A84E2838FD1E00CE904B /* UIResponder+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Utils.swift"; sourceTree = "<group>"; };
+		2031A855283928A900CE904B /* PasswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2031A859283928A900CE904B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2031A8632839297F00CE904B /* PasswordCriteriaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteriaTests.swift; sourceTree = "<group>"; };
+		2031A867283932C000CE904B /* PasswordStatusViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStatusViewTests.swift; sourceTree = "<group>"; };
+		2031A86B283939C200CE904B /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		2049933A28354752001315FD /* PasswordCriteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteria.swift; sourceTree = "<group>"; };
 		20E1EFFF2833FF5000E00E73 /* PasswordStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStatusView.swift; sourceTree = "<group>"; };
 		20FF2C382832B282000D944B /* PasswordCriteriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteriaView.swift; sourceTree = "<group>"; };
@@ -34,6 +52,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		201CA44E282EA24D0083B42E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2031A852283928A900CE904B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,6 +73,7 @@
 			children = (
 				201CA453282EA24D0083B42E /* Password */,
 				20FF2C372832B247000D944B /* PasswordStatusView */,
+				2031A856283928A900CE904B /* PasswordTests */,
 				201CA452282EA24D0083B42E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				201CA451282EA24D0083B42E /* Password.app */,
+				2031A855283928A900CE904B /* PasswordTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +117,17 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		2031A856283928A900CE904B /* PasswordTests */ = {
+			isa = PBXGroup;
+			children = (
+				2031A859283928A900CE904B /* Info.plist */,
+				2031A8632839297F00CE904B /* PasswordCriteriaTests.swift */,
+				2031A867283932C000CE904B /* PasswordStatusViewTests.swift */,
+				2031A86B283939C200CE904B /* ViewControllerTests.swift */,
+			);
+			path = PasswordTests;
+			sourceTree = "<group>";
+		};
 		20FF2C372832B247000D944B /* PasswordStatusView */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +158,24 @@
 			productReference = 201CA451282EA24D0083B42E /* Password.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2031A854283928A900CE904B /* PasswordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2031A85C283928A900CE904B /* Build configuration list for PBXNativeTarget "PasswordTests" */;
+			buildPhases = (
+				2031A851283928A900CE904B /* Sources */,
+				2031A852283928A900CE904B /* Frameworks */,
+				2031A853283928A900CE904B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2031A85B283928A900CE904B /* PBXTargetDependency */,
+			);
+			name = PasswordTests;
+			productName = PasswordTests;
+			productReference = 2031A855283928A900CE904B /* PasswordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -131,6 +187,11 @@
 				TargetAttributes = {
 					201CA450282EA24D0083B42E = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					2031A854283928A900CE904B = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+						TestTargetID = 201CA450282EA24D0083B42E;
 					};
 				};
 			};
@@ -148,6 +209,7 @@
 			projectRoot = "";
 			targets = (
 				201CA450282EA24D0083B42E /* Password */,
+				2031A854283928A900CE904B /* PasswordTests */,
 			);
 		};
 /* End PBXProject section */
@@ -159,6 +221,13 @@
 			files = (
 				201CA461282EA24E0083B42E /* LaunchScreen.storyboard in Resources */,
 				201CA45E282EA24E0083B42E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2031A853283928A900CE904B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +248,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2031A851283928A900CE904B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2031A86C283939C200CE904B /* ViewControllerTests.swift in Sources */,
+				2031A8642839297F00CE904B /* PasswordCriteriaTests.swift in Sources */,
+				2031A868283932C000CE904B /* PasswordStatusViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2031A85B283928A900CE904B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 201CA450282EA24D0083B42E /* Password */;
+			targetProxy = 2031A85A283928A900CE904B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		201CA45F282EA24E0083B42E /* LaunchScreen.storyboard */ = {
@@ -347,6 +434,49 @@
 			};
 			name = Release;
 		};
+		2031A85D283928A900CE904B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = THGV2QJ4R5;
+				INFOPLIST_FILE = PasswordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Alex677.PasswordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Password.app/Password";
+			};
+			name = Debug;
+		};
+		2031A85E283928A900CE904B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = THGV2QJ4R5;
+				INFOPLIST_FILE = PasswordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Alex677.PasswordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Password.app/Password";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -364,6 +494,15 @@
 			buildConfigurations = (
 				201CA466282EA24E0083B42E /* Debug */,
 				201CA467282EA24E0083B42E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2031A85C283928A900CE904B /* Build configuration list for PBXNativeTarget "PasswordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2031A85D283928A900CE904B /* Debug */,
+				2031A85E283928A900CE904B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

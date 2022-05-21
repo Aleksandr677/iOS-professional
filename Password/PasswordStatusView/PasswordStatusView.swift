@@ -107,6 +107,7 @@ extension PasswordStatusView {
         let specialCharacterMet = PasswordCriteria.specialCharacterMet(text)
         
         if shouldResetCriteria {
+            //inline validation
             lengthAndNoSpaceMet ? lengthCriteriaView.isCriteriaMet = true : lengthCriteriaView.reset() //if statement
             
             uppercaseMet ? uppercaseCriteriaView.isCriteriaMet = true : uppercaseCriteriaView.reset() //if statement
@@ -117,6 +118,7 @@ extension PasswordStatusView {
             
             specialCharacterMet ? specialCharacterCriteriaView.isCriteriaMet = true : specialCharacterCriteriaView.reset()
         } else {
+            //focus lost
             lengthCriteriaView.isCriteriaMet = lengthAndNoSpaceMet
             uppercaseCriteriaView.isCriteriaMet = uppercaseMet
             lowerCaseCriteriaView.isCriteriaMet = lowercaseMet
@@ -148,5 +150,21 @@ extension PasswordStatusView {
         lowerCaseCriteriaView.reset()
         digitCriteriaView.reset()
         specialCharacterCriteriaView.reset()
+    }
+}
+
+//MARK: - Tests
+
+extension PasswordCriteriaView {
+    var isCheckMarkImage: Bool {
+        return imageView.image == checkmarkImage
+    }
+    
+    var isXmarkImage: Bool {
+        return imageView.image == xmarkImage
+    }
+    
+    var isResetImage: Bool {
+        return imageView.image == circleImage
     }
 }
