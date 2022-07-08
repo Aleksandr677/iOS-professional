@@ -35,4 +35,5 @@ Part 2. Stack.
 6. Networking (URLSession)
 7. Custom cells
 8. Animations
+9. Multithreading
 
