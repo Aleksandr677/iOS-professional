@@ -17,5 +17,22 @@ Sign in screen
 
 ![Sign In Screen](https://user-images.githubusercontent.com/95411693/178008808-475bb5ef-2a49-4a39-b2d5-de57a1a8f165.png)
 
+Password validation screen
 
+![Password validation](https://user-images.githubusercontent.com/95411693/178009705-efc879f7-47a2-45d3-9dfd-155414c68f03.png)
+
+
+Files hierarchy 
+
+![Files hierarchy](https://user-images.githubusercontent.com/95411693/178010403-62d5f154-869f-466d-8a9c-8e72e460f5cd.png)
+
+Part 2. Stack.
+1. UIKit
+2. No storyboards
+3. UITabController
+4. UnitTests
+5. UITableView
+6. Networking (URLSession)
+7. Custom cells
+8. Animations
 
